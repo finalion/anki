@@ -5,7 +5,7 @@ from collections import defaultdict
 from aqt import mw
 from aqt.qt import *
 from aqt.utils import showInfo, showText
-from mdict.mdict_query import IndexBuilder
+from wquery.libs.mdict.mdict_query import IndexBuilder
 from wquery.context import config
 from .base import (QueryResult, Service, ServiceManager, ServiceProfile,
                    export, with_styles)
