@@ -1,10 +1,11 @@
 #-*- coding:utf-8 -*-
 import re
+import random
 
 from aqt.utils import showInfo, showText
 from base import MdxService, export, register, with_styles
 
-path = u'/Users/yu/Documents/english study/mdx/LDOCE6双解/L6mp3.mdx'
+path = u'/Users/USER/Documents/english study/mdx/LDOCE6双解/L6mp3.mdx'
 
 
 @register(u'本地词典-LDOCE6')
@@ -79,6 +80,6 @@ class Ldoce6(MdxService):
             items = 0
             my_str = ''
             for items in range(len(m)):
-                my_str = my_str + m[items]
+                my_str = my_str + '<br>' + m[items]
             return my_str
         return ''
